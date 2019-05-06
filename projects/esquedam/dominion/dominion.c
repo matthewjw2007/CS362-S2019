@@ -526,7 +526,6 @@ int drawCard(int player, struct gameState *state)
 {	int count;
   int deckCounter;
   if (state->deckCount[player] <= 0){//Deck is empty
-    
     //Step 1 Shuffle the discard pile back into a deck
     int i;
     //Move discard to deck
@@ -540,7 +539,6 @@ int drawCard(int player, struct gameState *state)
 
     //Shufffle the deck
     shuffle(player, state);//Shuffle the deck up and make it so that we can draw
-   
     if (DEBUG){//Debug statements
       printf("Deck count now: %d\n", state->deckCount[player]);
     }
