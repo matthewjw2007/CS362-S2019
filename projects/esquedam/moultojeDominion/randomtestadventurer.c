@@ -38,7 +38,7 @@ int main(){
 
         initHandCount = state.handCount[player];
 
-        adventurerFunction(drawnTreasure, &state, player, cardDrawn, tempHand);
+        adventurerEffect(&state, player);
 
         postDeckCount = state.deckCount[player];
 
