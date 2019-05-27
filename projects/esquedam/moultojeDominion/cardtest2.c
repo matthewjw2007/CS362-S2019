@@ -53,7 +53,7 @@ int main(){
     cardEffect(adventurer, choice1, choice2, choice3, &state, handPos, &bonus);
 
     for(int j = 0; j<state.handCount[0]; j++){
-        if(state.hand[0] == adventurer){
+        if(state.hand[0][j] == adventurer){
             newCount++;
         }
     }
